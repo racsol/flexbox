@@ -52,3 +52,10 @@
 	-webkit-align-items: @value;
 	align-items: @value;
 }
+
+.flex-basis(@value){
+	width: @value;
+	-ms-flex-preferred-size: @value; // ie 10
+	-webkit-flex-basis: @value;
+	flex-basis: @value;
+}
