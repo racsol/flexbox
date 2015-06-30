@@ -1,0 +1,54 @@
+.flex(){
+	display: -webkit-box; // safari 6.0 
+	display: -ms-flexbox; // ie 10 
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-grow(@value: 2){
+	-webkit-box-flex: @value; // safari 6.0
+	-ms-flex-positive: @value; // ie 10 
+	-webkit-flex-grow: @value;
+	flex-grow: @value;
+}
+
+.flex-shrink(@value: 0){
+	-ms-flex-negative: @value; // ie 10 
+	-webkit-flex-shrink: @value;
+	flex-shrink: @value;
+}
+
+.flex-direction(){
+	-ms-flex-direction: column; // ie 10 
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-direction-row(){
+	-webkit-box-orient: horizontal; // safari 6.0
+	-ms-flex-direction: row; // ie 10 
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.flex-direction-column(){
+	-webkit-box-orient: vertical; // safari 6.0
+	-ms-flex-direction: column; // ie 10 
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-justify-content(@value){
+	-webkit-box-pack: @value;  // safari 6.0
+	-ms-flex-pack: center; // ie 10 
+	-webkit-justify-content: @value;
+	justify-content: @value;
+	text-align: center;
+}
+
+.flex-align-items(@value){  
+	-webkit-box-align: @value; // safari 6.0
+	-ms-align-items: @value; // ie 10
+	-webkit-align-items: @value;
+	align-items: @value;
+}
