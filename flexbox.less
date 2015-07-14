@@ -54,8 +54,13 @@
 }
 
 .flex-basis(@value){
-	width: @value;
 	-ms-flex-preferred-size: @value; // ie 10
 	-webkit-flex-basis: @value;
 	flex-basis: @value;
+}
+
+.flex-order(@value){
+	-ms-flex-order: @value; // ie 10
+	-webkit-order: @value;
+	order: @value;
 }
