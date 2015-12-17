@@ -1,3 +1,6 @@
+// IE 10 old Flexbox implementation documentation
+// https://msdn.microsoft.com/en-us/library/dn265027(v=vs.85).aspx
+
 // https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 .flex(){
 	display: -webkit-box; // safari 6.0 
@@ -46,7 +49,7 @@
 // align-items: stretch | flex-start | flex-end | center | baseline
 .flex-align-items(@value){  
 	-webkit-box-align: @value; // safari 6.0
-	-ms-align-items: @value; // ie 10
+	-ms-flex-align: @value; // ie 10
 	-webkit-align-items: @value;
 	align-items: @value;
 }
@@ -61,6 +64,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/CSS/order
 .flex-order(@value){
 	-ms-flex-order: @value; // ie 10
+	flex-order: @value; // ie 10
 	-webkit-order: @value;
 	order: @value;
 }
@@ -71,3 +75,11 @@
     -ms-flex-wrap: @value; // ie 10
 	flex-wrap: @value;
 }
+
+// TODO
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+// align-self: auto | flex-start | flex-end | center | baseline | stretch
+
+// TODO
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+// align-content: flex-start | flex-end | center | space-between | space-around | stretch
